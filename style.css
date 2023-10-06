@@ -1,0 +1,327 @@
+
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+.left {
+ display: flex;
+ flex-direction: column;
+ gap: 25px; 
+ font-size: 18px;
+ width: 310px;
+ height: 660px;
+ background-color: black;
+ margin: -9px;
+ padding: 20px;
+}
+.left p{
+ margin-top: 0px;
+}
+.left li {
+ list-style: none;
+ text-decoration: none;
+ display: flex; 
+ align-items: center; 
+ justify-content: flex-start;
+ padding: 10px 10px;
+ transition: all 0.3s; 
+ margin-left: -18px;
+}
+.left li a {
+ color: white;
+ text-decoration: none;
+ margin-left: 10px; 
+}
+.left li img{
+    height: 20px;
+    width: 20px;
+}
+.left li:hover {
+ background-color: rgb(64, 65, 66);
+ border-radius: 5px;
+ margin-right: 10px; 
+}
+.left a img {
+ margin-right: 10px;
+}
+
+
+* {
+box-sizing: border-box;
+font-family: "circular std book", sans-serif;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: #222;
+font-size: 14px;
+}
+
+.music-player {
+background-color: #111;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+height: 7rem;
+padding: 1em;
+color: #ddd;
+}
+i{
+color: #999;
+}
+i:hover{
+color: #ddd;
+}
+.song-bar {
+position: absolute;
+left: 1em;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+gap: 1.5rem;
+width: 25%;
+}
+
+.song-infos {
+display: flex;
+align-items: center;
+gap: 1em;
+}
+.image-container {
+flex-shrink: 0;
+width: 4.5em;
+height:4.5em;
+}
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.song-description p {
+margin: 0.2em;
+}
+.title,
+.artist {
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+}
+.title:hover,
+.artist:hover {
+text-decoration: underline;
+}
+.artist{
+color: #999;
+}
+.icons{
+display: flex;
+gap: 1em;
+
+}
+.progress-controller{
+width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 1.5em;
+color: #999;
+}
+.control-buttons{
+display: flex;
+align-items: center;
+gap: 2em;
+}
+.play-pause{
+display: inline-block;
+padding: 1em;
+background-color: #ddd;
+color: #111;
+border-radius: 50%;
+}
+.play-pause:hover{
+transform: scale(1.1);
+color: #111;
+}
+.progress-container{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1em;
+}
+.progress-bar{
+height: 4px;
+border-radius: 10px;
+width: 30%;
+background-color: #ccc4;
+}
+.progress{
+position: relative;
+height: 100%;
+width: 30%;
+border-radius: 10px;
+background-color: #999;
+}
+.progress-bar:hover .progress{
+background-color: #2d5;
+}
+.progress-bar:hover .progress::after{
+content: "";
+position: absolute;
+width: 1em;
+height: 1em;
+right: 0;
+border-radius: 50%;
+background-color: gray;
+transform: translate(50%, calc(2px - 50%));
+}
+    
+h1{
+    position: absolute;
+    top: 30%;
+    font-size: 60px;
+    color: white;
+    }
+    
+    .box{
+    width: 500px;
+    position: absolute;
+    top: 15px;
+    left: 370px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    .box > i {
+    font-size: 20px;
+    color: #777;
+    }
+    
+    .box > input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+    }
+    .arrows{
+        position: absolute;
+        top: 28px;
+        left: 300px;
+    }
+    h4{
+        position: absolute;
+        top: 50px;
+        font-size: 25px;
+        left: 325px;
+        color: whitesmoke;
+    }
+    .sec_head{
+        position: absolute;
+        top: 330px;
+        font-size: 22px;
+        left: -37px;
+        color: whitesmoke;
+    }
+    .grid{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: aliceblue;
+        
+    }
+    .box1{
+        position: absolute;
+        top: 124px;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 15px;
+        left: 330px;
+        font-weight: bolder;
+        background-color:rgb(167, 68, 167);
+        border-radius:8px;
+        height: 230px;
+        width: 550px;
+    }
+    .box2{
+        position: absolute;
+        top: 124px;
+        left: 915px;
+        padding-top: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+        padding-left: 15px;
+        background-color: rgb(239, 91, 22);
+        border-radius: 8px;
+        height: 230px;
+        width: 570px;
+    }
+    .box3{
+        position: absolute;
+        top: 414px;
+        left: 330px;
+        padding-top: 10px;
+        padding-left: 15px;
+        font-size: 20px;
+        background-color:#008a67;
+        border-radius: 8px;
+        height: 220px;
+        width: 285px;
+    }
+    .box4{
+        position: absolute;
+        top: 414px;
+        left: 655px;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 15px;
+        background-color:darkblue;
+        border-radius: 8px;
+        height: 220px;
+        width: 285px;
+    }
+    .box5{
+        position: absolute;
+        top: 414px;
+        left: 980px;
+        font-size: 20px;
+        background-color: rgb(167, 68, 167);
+        padding-top: 10px;
+        padding-left: 15px;
+        border-radius: 8px;
+        height: 220px;
+        width: 285px;
+    }
+    .box6{
+        position: absolute;
+        top: 414px;
+        left: 1300px;
+        padding-top: 15px;
+        padding-left: 40px;
+        background-color: rgb(204, 14, 93);
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        font-size: 20px;
+        height: 220px;
+        width: 190px;
+    }
+    .right_arr{
+        position: absolute;
+        top: 210px;
+        left: 1103px;
+        scale: 1.2;
+        border:3px solid white;
+        height: 30px;
+        width: 30px;
+        background-color:white;
+        border-radius: 999px;
+        z-index: 1;
+     }
